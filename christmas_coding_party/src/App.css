@@ -157,3 +157,11 @@ body {
   color: #FFFFFF;
   font-weight: bold;
 }
+
+.buttom-word a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}

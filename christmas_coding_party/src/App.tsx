@@ -76,6 +76,11 @@ export default function App() {
         {hash === '#Js' && <div>{value} for Javascript</div>}
         {hash === '#Dart' && <div>{value} for dart</div>}
       </header>
+      <div className="buttom-word">
+        <a href="https://github.com/lmwmason">@happy coding</a>
+        <p></p>
+        <a href="mailmwmason@naver.com">문의 : lmwmason@naver.com</a>
+      </div>
     </div>
   );
 }

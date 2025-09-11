@@ -1,0 +1,152 @@
+.problem-page-container {
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 96rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.problem-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .problem-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .problem-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.problem-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition-property: background-color;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.problem-card:hover {
+  background-color: #374151;
+}
+
+.problem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.problem-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.problem-id {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.problem-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.difficulty-badge {
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  min-width: 6rem;
+  text-align: center;
+}
+
+.difficulty-bronze {
+  background-color: #92400e;
+  color: #fff;
+}
+.difficulty-silver {
+  background-color: #d1d5db;
+  color: #111827;
+}
+.difficulty-gold {
+  background-color: #fcd34d;
+  color: #111827;
+}
+.difficulty-platinum {
+  background-color: #2dd4bf;
+  color: #111827;
+}
+.difficulty-diamond {
+  background-color: #60a5fa;
+  color: #111827;
+}
+
+.problem-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #4b5563;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.score-label {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.score-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fcd34d;
+}
+
+.score-indicator-container {
+  height: 0.5rem;
+  background-color: #374151;
+  border-radius: 9999px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.score-indicator-bar {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.5s ease-in-out;
+}
+
+.indicator-red {
+  background-color: #ef4444;
+}
+
+.indicator-yellow {
+  background-color: #f59e0b;
+}
+
+.indicator-blue {
+  background-color: #3b82f6;
+}
+
+.indicator-green {
+  background-color: #10b981;
+}

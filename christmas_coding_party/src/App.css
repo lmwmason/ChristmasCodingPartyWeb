@@ -42,7 +42,7 @@ body {
   color: #e0e0e0;
 }
 
-.App-header input[type="ID"] {
+.App-header input[type="text"] {
   width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
@@ -56,13 +56,13 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
 
-.App-header input[type="ID"]:focus {
+.App-header input[type="text"]:focus {
   border-color: #e2ce4a;
   outline: none;
   box-shadow: 0 4px 12px rgba(226, 178, 74, 0.5);
 }
 
-.App-header input[type="ID"]::placeholder {
+.App-header input[type="text"]::placeholder {
   color: #888;
   font-style: italic;
 }
@@ -164,4 +164,31 @@ body {
   font-size: 13px;
   letter-spacing: 1px;
   transition: color 0.3s ease;
+}
+
+.login-button {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #333;
+  color: #CCCCCC;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 35px;
+  background-color: #222;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 12px;
+}
+
+.login-button:hover {
+  color: #222;
+  background-color: #fdc600;
+  transform: scale(1.05);
+}
+
+.login-button:active {
+  background-color: #fdc600;
+  transform: scale(0.98);
 }
